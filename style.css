@@ -265,3 +265,89 @@ footer {
     align-items: flex-start;
   }
 }
+
+
+/* --- NOUVEAUX AJOUTS --- */
+
+/* Justifier le texte des paragraphes de présentation */
+.justify-text {
+  text-align: justify;
+}
+
+/* Grille en tuiles pour les Compétences BUT & Projets */
+.tuiles-grid {
+  display: grid;
+  /* Crée des colonnes qui s'adaptent à la taille de l'écran, 3 max par ligne sur PC */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.tuile-card {
+  background-color: #d4eaff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 119, 204, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tuile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 119, 204, 0.3);
+}
+
+.tuile-card h3 {
+  color: #004a99;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+/* Force les images à avoir exactement la même taille */
+.tuile-card img {
+  width: 100%;
+  height: 160px; /* Taille fixe */
+  object-fit: cover; /* Coupe proprement l'image sans l'écraser */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #0077cc;
+  transition: opacity 0.3s ease;
+}
+
+.tuile-card a:hover img {
+  opacity: 0.8;
+}
+
+.tuile-card h4 {
+  margin: 5px 0;
+  color: #005bb5;
+  font-size: 1.1rem;
+}
+
+.tuile-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 5px;
+}
+
+/* Bouton pour aller voir le projet depuis la page de compétence */
+.btn-projet {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-projet:hover {
+  background-color: #004a99;
+  color: white;
+}
