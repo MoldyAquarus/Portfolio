@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projet LEGO – Valentin CARCHON</title>
+  <title>SAÉ Tableau LEGO – Valentin CARCHON</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,31 +17,47 @@
   </header>
 
   <section>
-    <h2>🧱 Projet LEGO</h2>
+    <h2>🧱 SAÉ 3 & 4 : Site E-Commerce "Tableau LEGO"</h2>
 
     <h3>📌 Contexte et Description</h3>
-    <p class="justify-text">Ce projet a été réalisé lors de ma [première/deuxième] année de BUT Informatique, [seul / en groupe de X personnes]. L'objectif principal était de [décrire l'objectif : créer un système de gestion de pièces, un simulateur, etc.].</p>
+    <p class="justify-text">
+      Ce projet constitue la SAÉ (Situation d'Apprentissage et d'Évaluation) centrale de ma deuxième année de BUT. L'objectif global est de concevoir un site e-commerce complet permettant à un client de téléverser une image personnelle afin de la transformer en un tableau physique composé de briques LEGO. 
+      <br><br>
+      La particularité de ce projet réside dans son <strong>architecture modulaire</strong> : chaque fonctionnalité (front-end web, traitement d'image, algorithme d'optimisation, base de données) est développée individuellement dans des langages différents, avant d'être assemblée lors d'un travail en équipe.
+    </p>
 
-    <h3>🎯 Objectifs techniques</h3>
+    <h3>🎯 Objectifs techniques du cahier des charges</h3>
     <ul>
-      <li>Concevoir une architecture logicielle robuste.</li>
-      <li>Mettre en place une interface utilisateur intuitive.</li>
-      <li>Gérer la persistance des données.</li>
+      <li><strong>Front-End (PHP Objet) :</strong> Création de l'interface utilisateur, upload d'images, gestion des comptes clients, devis PDF et paiements.</li>
+      <li><strong>Analyse et Traitement (Java) :</strong> Pixellisation de l'image cliente et association avec la palette de couleurs des briques LEGO disponibles via la base de données.</li>
+      <li><strong>Algorithmique (C) :</strong> Développement d'un algorithme de pavage optimisé pour remplacer les pixels par des briques de tailles variées (1x1 à 2x4) en minimisant le coût.</li>
+      <li><strong>Base de données (PostgreSQL) :</strong> Conception d'un modèle relationnel sécurisé pour gérer les utilisateurs, les commandes, les factures et le catalogue de briques.</li>
     </ul>
 
-    <h3>💡 Mon rôle et ma contribution (Lien avec la compétence Réaliser)</h3>
-    <p class="justify-text">Dans ce projet, j'ai directement mis en pratique la compétence <strong>Réaliser</strong> en accomplissant les tâches suivantes :</p>
+    <h3>💡 Ma démarche et mes preuves d'apprentissage (Compétence Réaliser)</h3>
+    <p class="justify-text">
+      À travers ce projet ambitieux, j'ai pu démontrer concrètement ma maîtrise de la compétence <strong>Réaliser</strong> :
+    </p>
     <ul>
-      <li><strong>Développement (Coder) :</strong> J'ai programmé en [Langage : ex. Java/Python] les différentes fonctionnalités comme [donner un exemple concret].</li>
-      <li><strong>Tests et Débogage :</strong> J'ai dû identifier et corriger des bugs, notamment concernant [exemple de bug ou difficulté].</li>
-      <li><strong>Conception :</strong> J'ai participé à la réflexion sur la structure des classes (POO) pour rendre le code facilement réutilisable.</li>
+      <li><strong>Élaborer une application complexe :</strong> J'ai dû coder des algorithmes spécifiques (en C et Java) pour traiter les images, tout en assurant le développement d'un serveur Web robuste en PHP. Cela m'a appris à choisir les bonnes structures de données selon le langage.</li>
+      <li><strong>Faire communiquer des modules hétérogènes :</strong> L'un des plus grands défis (et réussites) a été de faire dialoguer le Front-End (PHP) avec les composants Back-End (Java/C) afin d'assurer un flux de données fluide et sécurisé de l'upload de l'image jusqu'à la proposition de devis.</li>
+      <li><strong>Maintenir et sécuriser :</strong> Sensibilisé aux enjeux professionnels, j'ai mis en place un code propre et commenté (en anglais, comme exigé par le cahier des charges) ainsi que des requêtes SQL sécurisées pour prévenir les failles.</li>
     </ul>
+
+    <h3>🚧 Regard critique et difficultés</h3>
+    <p class="justify-text">
+      [Insère ici une petite difficulté personnelle. Exemple : "La difficulté majeure a été d'optimiser le temps d'exécution de l'algorithme de pavage en C. Face à une image haute résolution, le traitement était initialement trop lourd. J'ai dû repenser mon algorithme pour le rendre plus efficace techniquement, ce qui a été très formateur."]
+    </p>
 
     <h3>🛠️ Technologies et outils utilisés</h3>
-    <p><strong>Langages :</strong> [Ex: Java, Python] <br>
-       <strong>Outils :</strong> [Ex: VS Code, Git, Figma]</p>
+    <p>
+      <strong>Langages :</strong> PHP (Objet), Java, C, SQL (PostgreSQL), HTML/CSS <br>
+      <strong>Outils :</strong> Git/GitHub, Environnement Linux
+    </p>
 
-    <p style="text-align: center; margin-top: 30px;"><a href="competence_realiser.html">⬅️ Retour à la compétence RÉALISER</a></p>
+    <p style="text-align: center; margin-top: 30px;">
+      <a href="competence_realiser.html" style="color: #0077cc; font-weight: bold;">⬅️ Retour à la compétence RÉALISER</a>
+    </p>
   </section>
 </body>
 </html>
