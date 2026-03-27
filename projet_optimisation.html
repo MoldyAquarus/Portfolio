@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analyse Algorithmique – Valentin CARCHON</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="competence_optimiser.html">Retour à la compétence OPTIMISER</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>⚙️ Analyse Algorithmique & Complexité</h2>
+
+    <h3>📌 Contexte et Description</h3>
+    <p class="justify-text">
+      Durant mon parcours de BUT Informatique, le cours d'algorithmique avancée s'est concentré sur l'étude scientifique de la performance des programmes. Plutôt que de simplement écrire du code fonctionnel, l'objectif était d'analyser mathématiquement le comportement d'algorithmes classiques face à de grands volumes de données.
+    </p>
+
+    <h3>🎯 Objectifs techniques</h3>
+    <ul>
+      <li>Calculer la complexité en temps et en espace d'un algorithme (au pire cas et en moyenne).</li>
+      <li>Identifier les inefficacités des algorithmes récursifs naïfs.</li>
+      <li>Transformer une solution exponentielle $O(\varphi^n)$ en une solution linéaire $O(n)$ ou logarithmique $O(\log n)$.</li>
+    </ul>
+
+    <h3>💡 Ma démarche et mes preuves d'apprentissage (Compétence Optimiser)</h3>
+    <p class="justify-text">À travers divers exercices et études de cas, j'ai mis en pratique la compétence <strong>Optimiser</strong>. Voici deux exemples concrets étudiés en cours :</p>
+    
+    <ul>
+      <li><strong>Les Nombres de Fibonacci :</strong> 
+        J'ai analysé l'algorithme récursif naïf, démontrant que sa complexité est exponentielle $\Theta(\varphi^n)$ en raison de calculs redondants (l'arbre des appels grandit de manière démesurée). J'ai ensuite étudié et implémenté des solutions optimisées : une approche itérative réduisant la complexité à $\Theta(n)$, puis une approche basée sur des calculs matriciels permettant d'atteindre une complexité quasi-instantanée de $\Theta(\log n)$.
+      </li>
+      <br>
+      <li><strong>Les Tours de Hanoï :</strong> 
+        Le déplacement des disques requiert $2^n - 1$ transferts. L'enjeu d'optimisation n'était pas de générer tous les mouvements (impossible en temps raisonnable pour $n=64$), mais de créer un algorithme capable de déterminer directement un mouvement précis à un instant $t$. J'ai étudié comment un algorithme itératif exploitant les propriétés binaires permet d'obtenir ce résultat avec une complexité moyenne de l'ordre de $O(1)$ (constante).
+      </li>
+    </ul>
+
+    <h3>🎓 Ce que cette preuve démontre</h3>
+    <p class="justify-text">
+      Cette étude théorique et pratique prouve ma capacité à adopter une <strong>démarche scientifique</strong> face au code. Je ne code plus "à l'aveugle" : je suis capable d'anticiper si un algorithme sera capable de traiter des millions de données ou s'il provoquera un dépassement de capacité (Stack Overflow) ou des ralentissements majeurs.
+    </p>
+
+    <h3>🛠️ Notions abordées</h3>
+    <p>
+      <strong>Mathématiques :</strong> Arbres d'appels, polynômes caractéristiques, complexité asymptotique (Grand O, Thêta). <br>
+      <strong>Informatique :</strong> Récursivité, méthodes itératives, optimisation Python.
+    </p>
+
+    <p style="text-align: center; margin-top: 30px;"><a href="competence_optimiser.html" style="color: #0077cc; font-weight: bold;">⬅️ Retour à la compétence OPTIMISER</a></p>
+  </section>
+</body>
+</html>

@@ -3,36 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projet Tetris – Version Python</title>
+  <title>Projet Tetris – Valentin CARCHON</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="competence_optimiser.html">Retour à la compétence OPTIMISER</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <section>
     <h2>🎮 Projet Tetris – Version Python</h2>
 
-    <h3>📌 Description</h3>
-    <p>Avec un collègue expérimenté, j’ai développé une version basique du célèbre jeu Tetris en Python. Ce projet visait à recréer les principales mécaniques du jeu tout en explorant des concepts fondamentaux de programmation liés au développement de jeux vidéo.</p>
+    <h3>📌 Contexte et Description</h3>
+    <p class="justify-text">
+      Avec un camarade expérimenté, j’ai développé une version basique du célèbre jeu Tetris. Si l'objectif premier était de recréer les mécaniques du jeu (mouvements, génération de pièces, suppression de lignes), ce projet s'est rapidement transformé en un excellent exercice d'<strong>optimisation des performances</strong>.
+    </p>
 
-    <h3>⚙️ Fonctionnalités principales</h3>
+    <h3>⚙️ Fonctionnalités implémentées</h3>
     <ul>
-      <li>Génération aléatoire des pièces</li>
-      <li>Détection et suppression automatique des lignes complètes</li>
-      <li>Gestion dynamique de la vitesse de descente (score et niveau)</li>
-      <li>Mouvement des pièces : gauche, droite, rotation, descente rapide</li>
-      <li>Interface graphique avec le module FLTK</li>
-      <li>Système de score évolutif avec la difficulté</li>
+      <li>Génération aléatoire des pièces et gestion des collisions.</li>
+      <li>Détection et suppression automatique des lignes complètes.</li>
+      <li>Gestion dynamique de la vitesse de descente en fonction du score.</li>
+      <li>Interface graphique gérée avec le module FLTK.</li>
     </ul>
 
-    <h3>🚧 Difficultés rencontrées</h3>
-    <p>Le principal défi a été l’optimisation des performances. Le jeu devenait lent à mesure qu’il progressait car la grille se régénérait sans effacer les couches précédentes, causant une surcharge mémoire. Ce problème une fois résolu, le reste du projet s’est déroulé sans encombre.</p>
+    <h3>💡 Ma démarche et mes preuves d'apprentissage (Compétence Optimiser)</h3>
+    <p class="justify-text">
+      Le principal défi de ce projet n'a pas été la logique du jeu en elle-même, mais la gestion des ressources système. J'ai été confronté à un problème majeur : <strong>le jeu ralentissait drastiquement à mesure que la partie avançait.</strong>
+    </p>
+    <ul>
+      <li><strong>Identification du goulot d'étranglement :</strong> En analysant le comportement de la boucle de rendu, j'ai constaté que la grille se régénérait graphiquement en empilant les éléments visuels sans effacer les couches précédentes.</li>
+      <li><strong>Résolution du problème (Surcharge mémoire) :</strong> J'ai dû repenser la fonction de rafraîchissement (Redraw) de l'interface graphique. En assurant un nettoyage correct des éléments obsolètes en mémoire à chaque frame, le problème de lenteur a été totalement corrigé.</li>
+    </ul>
 
-    <h3>🎓 Leçons apprises</h3>
-    <p>Ce projet m’a permis de renforcer mes compétences en Python et de mieux comprendre les principes de l’optimisation dans un contexte de jeu vidéo. Il m’a également sensibilisé à l’importance de structurer proprement le code pour maintenir de bonnes performances.</p>
+    <h3>🎓 Ce que cette preuve démontre</h3>
+    <p class="justify-text">
+      Ce projet montre ma capacité à <strong>diagnostiquer un problème de performance concret (fuite de mémoire/Memory Leak)</strong> dans une application graphique temps réel, et à restructurer le code pour garantir une efficacité logicielle et une expérience utilisateur fluide.
+    </p>
 
     <h3>🛠️ Technologies utilisées</h3>
-    <p>Python, FLTK</p>
+    <p>
+      <strong>Langages :</strong> Python <br>
+      <strong>Bibliothèques :</strong> FLTK (Interface graphique)
+    </p>
 
-    <p><a href="index.html">⬅️ Retour au portfolio</a></p>
+    <p style="text-align: center; margin-top: 30px;"><a href="competence_optimiser.html" style="color: #0077cc; font-weight: bold;">⬅️ Retour à la compétence OPTIMISER</a></p>
   </section>
 </body>
 </html>

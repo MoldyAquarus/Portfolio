@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compétence GÉRER – Portfolio Valentin CARCHON</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Ajustement spécifique pour que les 2 blocs prennent tout l'espace proprement */
+    .reflexion-container {
+      justify-content: center;
+      gap: 30px;
+    }
+    .reflexion-container .competence-block {
+      flex: 1 1 48%;
+      max-width: 48%;
+    }
+    
+    @media (max-width: 900px) {
+      .reflexion-container .competence-block {
+        flex: 1 1 100%;
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="index.html#competences-but">Compétences BUT</a></li>
+        <li><a href="index.html#cv">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="detail-competence">
+    <h2>Compétence 4 : GÉRER</h2>
+    <h3 style="text-align: center; color: #005bb5;">Gérer des données de l'information (Niveau 2)</h3>
+    
+    <div class="presentation-block">
+      <h3>Ma vision de la compétence</h3>
+      <p class="justify-text">
+        Toute application informatique repose sur la donnée. Dans le cadre de la compétence <strong>Gérer</strong>, j'ai appris que manipuler des données ne se résume pas à faire des requêtes pour les afficher. C'est avant tout un travail d'<strong>architecture, de cohérence et de sécurité</strong>. Concevoir une base de données, c'est traduire les règles métiers d'une entreprise (par exemple, la légalité et l'immuabilité d'une facture) en contraintes techniques rigoureuses.
+      </p>
+    </div>
+
+    <!-- Section : Posture réflexive et évolution -->
+    <div class="competences-container reflexion-container">
+      <div class="competence-block">
+        <h3>📈 Ma trajectoire de développement</h3>
+        <p class="justify-text">
+          L'an dernier, mon approche de la base de données se limitait à de simples tables indépendantes et à des requêtes `SELECT` basiques. En deuxième année, ma vision s'est considérablement élargie. J'ai appris à concevoir des Modèles Conceptuels de Données (MCD) complexes, à automatiser la logique directement dans le SGBD via des procédures stockées et des triggers, mais aussi à m'ouvrir aux bases de données orientées documents (NoSQL), adaptées aux architectures web modernes.
+        </p>
+      </div>
+      <div class="competence-block">
+        <h3>🔍 Auto-évaluation & Regard critique</h3>
+        <p class="justify-text">
+          Je me sens très à l'aise avec le modèle relationnel classique (SQL). J'apprécie la rigueur que cela impose dans la modélisation. En revanche, le passage au modèle NoSQL (MongoDB) m'a demandé de déconstruire mes habitudes : penser en "documents" imbriqués plutôt qu'en "tables" relationnelles est un exercice d'abstraction difficile. Mon objectif est de continuer à pratiquer le NoSQL pour savoir instinctivement quelle technologie choisir face à un cahier des charges.
+        </p>
+      </div>
+    </div>
+    
+    <br>
+
+    <div class="presentation-block">
+      <h3>Apprentissages critiques validés (Niveau 2)</h3>
+      <ul style="padding-left: 20px;">
+        <li><strong>Concevoir une base de données :</strong> Traduire un besoin client en MCD, puis en modèle physique optimisé et cohérent.</li>
+        <li><strong>Exploiter et automatiser :</strong> Écrire des requêtes complexes, créer des vues, et programmer des triggers/procédures stockées pour garantir l'intégrité des données au niveau du serveur.</li>
+        <li><strong>S'adapter aux technologies :</strong> Comprendre les différences de paradigmes entre les bases relationnelles (SQL) et non-relationnelles (NoSQL/MongoDB).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projets-lies">
+    <h2>Traces et Preuves d'apprentissage</h2>
+    <p style="text-align: center;" class="justify-text">
+      Voici le recueil de mes preuves attestant de ma maîtrise de la modélisation, de l'importation et de la sécurisation des données d'entreprise.
+    </p>
+    
+    <div class="tuiles-grid">
+      <!-- Preuve 1 : Projet Facturation -->
+      <div class="tuile-card">
+        <a href="projet_facturation.html"><img src="facturation.jpg" alt="Projet Facturation" /></a>
+        <h4>Projet Facturation (SQL)</h4>
+        <p><strong>Preuve d'apprentissage :</strong> Migration de données, maintien de l'immuabilité métier et création de triggers/procédures stockées.</p>
+        <a href="projet_facturation.html" class="btn-projet">Analyser cette preuve ➔</a>
+      </div>
+      
+      <!-- Preuve 2 : Réservation de billets -->
+      <div class="tuile-card">
+        <a href="projet_train.html"><img src="train.jpg" alt="Réservation TGV MongoDB" /></a>
+        <h4>Réservation TGV (MongoDB)</h4>
+        <p><strong>Preuve d'apprentissage :</strong> Gestion de projet orientée "Backlog" et exploitation d'une base de données orientée documents (NoSQL).</p>
+        <a href="projet_train.html" class="btn-projet">Analyser cette preuve ➔</a>
+      </div>
+    </div>
+
+    <p style="text-align: center; margin-top: 30px;"><a href="index.html#competences-but" style="font-weight: bold; color: #0077cc;">⬅️ Retour aux compétences</a></p>
+  </section>
+
+</body>
+</html>

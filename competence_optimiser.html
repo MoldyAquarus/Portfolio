@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compétence OPTIMISER – Portfolio Valentin CARCHON</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Ajustement spécifique pour que les 2 blocs prennent tout l'espace proprement */
+    .reflexion-container {
+      justify-content: center;
+      gap: 30px;
+    }
+    .reflexion-container .competence-block {
+      flex: 1 1 48%;
+      max-width: 48%;
+    }
+    
+    @media (max-width: 900px) {
+      .reflexion-container .competence-block {
+        flex: 1 1 100%;
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="index.html#competences-but">Compétences BUT</a></li>
+        <li><a href="index.html#cv">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="detail-competence">
+    <h2>Compétence 2 : OPTIMISER</h2>
+    <h3 style="text-align: center; color: #005bb5;">Optimiser des applications informatiques (Niveau 2)</h3>
+    
+    <div class="presentation-block">
+      <h3>Ma vision de la compétence</h3>
+      <p class="justify-text">
+        Dans le BUT Informatique, la compétence <strong>Optimiser</strong> marque la transition entre un simple codeur et un véritable informaticien. Si "Réaliser" permet de créer une application qui fonctionne, "Optimiser" permet de créer une application <strong>performante, économe en ressources (Green IT) et fluide pour l'utilisateur</strong>. C'est l'art de choisir les bonnes structures de données et de réduire la complexité algorithmique pour garantir l'efficacité logicielle, tout en anticipant les limites matérielles.
+      </p>
+    </div>
+
+    <!-- Section : Posture réflexive et évolution -->
+    <div class="competences-container reflexion-container">
+      <div class="competence-block">
+        <h3>📈 Ma trajectoire de développement</h3>
+        <p class="justify-text">
+          Lors de mon premier semestre, mon seul critère de réussite était un programme sans erreur de compilation. J'utilisais souvent des algorithmes naïfs, gourmands en mémoire et en temps de calcul. Aujourd'hui, en deuxième année, <strong>ma démarche est devenue scientifique et mathématique</strong>. Avant de coder une fonctionnalité critique, j'analyse la complexité théorique (O(n), O(log n)...) et je cherche à remplacer les récursivités lourdes par des méthodes itératives ou optimisées.
+        </p>
+      </div>
+      <div class="competence-block">
+        <h3>🔍 Auto-évaluation & Regard critique</h3>
+        <p class="justify-text">
+          J'ai acquis une bonne maîtrise de l'analyse de complexité théorique grâce à mes cours, et je sais identifier les goulots d'étranglement dans mes projets pratiques (comme les fuites de mémoire). Mon point d'amélioration réside dans l'anticipation : j'ai encore parfois le réflexe d'écrire la solution la plus simple en premier lieu, pour ne l'optimiser que dans un second temps. J'aspire à intégrer les principes d'optimisation dès la phase de conception.
+        </p>
+      </div>
+    </div>
+    
+    <br>
+
+    <div class="presentation-block">
+      <h3>Apprentissages critiques validés (Niveau 2)</h3>
+      <ul style="padding-left: 20px;">
+        <li><strong>Analyser la complexité :</strong> Mesurer l'impact en temps et en mémoire d'un algorithme (pire cas, cas moyen).</li>
+        <li><strong>Choisir les structures de données adéquates :</strong> Utiliser la bonne structure pour minimiser le coût des opérations fréquentes.</li>
+        <li><strong>Profilage et amélioration :</strong> Identifier les problèmes de performance d'un code existant et appliquer des solutions techniques pour les résoudre.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projets-lies">
+    <h2>Traces et Preuves d'apprentissage</h2>
+    <p style="text-align: center;" class="justify-text">
+      Voici le recueil de mes preuves attestant de ma capacité à analyser formellement des algorithmes et à résoudre des problèmes de performance dans des applications réelles.
+    </p>
+    
+    <div class="tuiles-grid">
+      <!-- Preuve 1 : Cours d'optimisation -->
+      <div class="tuile-card">
+        <a href="projet_optimisation.html"><img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=800" alt="Analyse Algorithmique" /></a>
+        <h4>Analyse Algorithmique</h4>
+        <p><strong>Preuve d'apprentissage :</strong> Étude formelle et réduction drastique de la complexité sur des problèmes mathématiques (Fibonacci, Hanoï).</p>
+        <a href="projet_optimisation.html" class="btn-projet">Analyser cette preuve ➔</a>
+      </div>
+      
+      <!-- Preuve 2 : Tetris -->
+      <div class="tuile-card">
+        <a href="projet_tetris.html"><img src="tetris.jpg" alt="Projet Tetris" /></a>
+        <h4>Projet Tetris (Python)</h4>
+        <p><strong>Preuve d'apprentissage :</strong> Identification et résolution d'une fuite de mémoire critique entraînant le ralentissement du jeu.</p>
+        <a href="projet_tetris.html" class="btn-projet">Analyser cette preuve ➔</a>
+      </div>
+    </div>
+
+    <p style="text-align: center; margin-top: 30px;"><a href="index.html#competences-but" style="font-weight: bold; color: #0077cc;">⬅️ Retour aux compétences</a></p>
+  </section>
+
+</body>
+</html>

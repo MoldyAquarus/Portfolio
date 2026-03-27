@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet Facturation – Valentin CARCHON</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="competence_gerer.html">Retour à la compétence GÉRER</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>💼 Gestion de base de données : Projet Facturation</h2>
+
+    <h3>📌 Contexte et Description</h3>
+    <p class="justify-text">
+      Une entreprise souhaitait migrer son ancien logiciel de facturation "poste fixe" vers une solution Web automatisée. Le défi principal qui m'a été confié (en tant que maîtrise d'œuvre) était de gérer l'importation de l'historique de facturation fourni en format brut (CSV), tout en construisant une nouvelle architecture de base de données relationnelle robuste et pérenne.
+    </p>
+
+    <h3>🎯 Objectifs techniques</h3>
+    <ul>
+      <li>Créer un MCD à partir de l'analyse d'un fichier brut.</li>
+      <li>Développer des procédures stockées pour la création dynamique des tables et l'import/dispatch des données.</li>
+      <li>Garantir l'immuabilité des factures (règle métier) via des contraintes et des Triggers SGBD.</li>
+      <li>Créer un IHM (backend) pour filtrer les factures et générer des "avoirs" (totaux ou partiels).</li>
+    </ul>
+
+    <h3>💡 Ma démarche et mes preuves d'apprentissage (Compétence Gérer)</h3>
+    <p class="justify-text">
+      Ce projet est une preuve très forte de ma compréhension des enjeux liés aux données en milieu professionnel :
+    </p>
+    <ul>
+      <li><strong>Intégrité et règles métiers :</strong> J'ai compris l'importance de l'<strong>immuabilité des données</strong>. Une facture émise ne doit jamais changer, même si le client déménage. J'ai modélisé la base pour dissocier l'adresse de facturation stockée à l'instant T, de l'adresse actuelle du client.</li>
+      <li><strong>Automatisation par Triggers :</strong> J'ai sécurisé la base en implémentant des Triggers. Par exemple : génération automatique d'un numéro strict (`FA-année-numéro`), interdiction stricte de modifier ou de supprimer une facture une fois validée.</li>
+      <li><strong>Optimisation par Vues :</strong> Plutôt que de stocker des redondances, j'ai créé des vues SQL calculant à la volée les montants HT, TTC et la TVA, allégeant ainsi le stockage.</li>
+    </ul>
+
+    <h3>🎓 Ce que cette preuve démontre</h3>
+    <p class="justify-text">
+      Cette mission prouve ma capacité à manipuler des données de bout en bout : de l'ingestion d'un fichier CSV mal structuré jusqu'à la création d'une architecture relationnelle hautement sécurisée, le tout en répondant à des exigences métiers strictes (gestion de facturation et d'avoirs).
+    </p>
+
+    <h3>🛠️ Notions abordées</h3>
+    <p>
+      <strong>Technologies :</strong> SQL, Procédures stockées, Triggers, Vues, HTML/PHP (pour l'IHM). <br>
+      <strong>Concepts :</strong> Modèle Conceptuel de Données (MCD), Immuabilité.
+    </p>
+
+    <p style="text-align: center; margin-top: 30px;"><a href="competence_gerer.html" style="color: #0077cc; font-weight: bold;">⬅️ Retour à la compétence GÉRER</a></p>
+  </section>
+</body>
+</html>
